@@ -50,11 +50,13 @@
 <body id="{{ page_title | handle }}" class="{% if customer %}customer-logged-in {% endif %}template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
 
   <div class="navbar">
-    <div class="logo">
-      <img src="{{ 'logo.svg' | asset_url }}" alt="" />
-    </div>
-    <div class="hamburger">
-      <img src="{{ 'cart.png' | asset_url }}" alt="" />
+    <div class="navbar-wrapper">
+      <div class="logo">
+        <img src="{{ 'logo.svg' | asset_url }}" alt="" />
+      </div>
+      <div class="hamburger">
+        <img src="{{ 'cart.png' | asset_url }}" alt="" />
+      </div>
     </div>
   </div>
 
@@ -63,6 +65,7 @@
   </main>
 
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  {{ 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js' | script_tag }}
   {{ 'throne.js'  | asset_url | script_tag }}
 
 </body>

@@ -1,6 +1,6 @@
 {
     "name": "Homepage",
-    "wrapper": "section",
+    "wrapper": "section.homepage.index",
     "sections": {
       "hero": {
         "type": "hero"
