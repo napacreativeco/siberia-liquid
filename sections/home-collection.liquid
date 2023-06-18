@@ -1,12 +1,9 @@
-<div class="shop-module page-component">
+<div id="page-component" class="shop-module page-component">
     this is the shop module
+
+    {% for product in collection.products %}
+      {{ product.title }}
+    {% endfor %}
 </div>
 
-{% schema %}
-{
-  "name": "Home Collection",
-  "tag": "section",
-  "class": "home-collection",
-  "limit": 1
-}
-{% endschema %}
+

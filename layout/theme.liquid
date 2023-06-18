@@ -44,6 +44,8 @@
 
   {{ 'https://code.jquery.com/jquery-3.7.0.min.js' | script_tag }}
   <script>jQuery('html').removeClass('no-js').addClass('js');</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js"></script>
 
 </head>
 
@@ -64,9 +66,7 @@
     {{ content_for_layout }}
   </main>
 
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js" integrity="sha512-cOH8ndwGgPo+K7pTvMrqYbmI8u8k6Sho3js0gOqVWTmQMlLIi6TbqGWRTpf1ga8ci9H3iPsvDLr4X7xwhC/+DQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  {{ 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollToPlugin3.min.js' | script_tag }}
-  {{ 'throne.js'  | asset_url | script_tag }}
+  {{ 'throne.js' | asset_url | script_tag }}
 
 </body>
 

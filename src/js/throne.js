@@ -1,6 +1,6 @@
 (function($) {
 
-    gsap.registerPlugin(ScrollTo, ScrollTrigger);
+    
 
     // On Load
     $(document).ready(function() {
@@ -25,7 +25,7 @@
         }, 100);
 
         // Scroll to Component
-        gsap.to(window, {duration: 2, scrollTo: "#modules"});
+        gsap.to(window, {duration: 0.3, scrollTo: window.innerHeight  });
 
         console.log($(this).attr('data-title'));
     });
