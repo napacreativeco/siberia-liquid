@@ -31,7 +31,7 @@ exports.buildStyles = buildStyles;
    Build Scripts
    ========================= */
 function buildScripts() {
-    return gulp.src(['./src/js/index.js',])
+    return gulp.src(['./src/js/throne.js',])
       .pipe(minify())
       .pipe(gulp.dest('./assets/'));
 };

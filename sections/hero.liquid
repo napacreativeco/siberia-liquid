@@ -1,0 +1,52 @@
+<div class="hero">
+    <div class="hero-wrapper">
+    
+        <div class="left">
+            <ul>
+                <li>
+                    <span class="hero-nav--link" data-title="shop-module">Shop</span>
+                </li>
+                <li>
+                    <span class="hero-nav--link" data-title="about-module">About</span>
+                </li>
+                <li>
+                    <span class="hero-nav--link" data-title="contact-module">Contact</span>
+                </li>
+                <li>
+                    <span class="hero-nav--link" data-title="lookbook-module">Lookbook</span>
+                </li>
+                <li>
+                    <span class="hero-nav--link" data-title="sign-up-module">Sign up</span>
+                </li>
+            </ul>
+        </div>
+        <div class="right">
+          [SECTION IMAGES]  
+        </div>
+
+    </div>
+</div>
+
+{% schema %}
+{
+  "name": "Hero",
+  "tag": "section",
+  "class": "hero-section-inputs",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "image",
+      "id": "background_desktop",
+      "label": "Background (Desktop)"
+    },
+    {
+      "type": "image",
+      "id": "background_mobile",
+      "label": "Background (Mobile)"
+    }
+  ],
+  "enabled_on": {
+    "templates": ["*"]
+  }
+}
+{% endschema %}

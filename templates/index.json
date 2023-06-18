@@ -1,0 +1,20 @@
+{
+    "name": "Homepage",
+    "wrapper": "section",
+    "sections": {
+      "hero": {
+        "type": "hero"
+      },
+      "home-collection": {
+        "type": "home-collection"
+      },
+      "about": {
+        "type": "about"
+      }
+    },
+    "order": [
+      "hero",
+      "home-collection",
+      "about"
+    ]
+}
